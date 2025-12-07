@@ -1,0 +1,5 @@
+google-genai
+playwright
+pydantic
+python-dotenv
+pytest

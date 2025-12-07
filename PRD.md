@@ -28,12 +28,13 @@ A specialized "Condo Hunter" agent for Toronto investors. It goes beyond basic l
 | **Tool A: Ghost Scraper** | "The Harvester". Visits listing URLs, extracts basic data + rental history. Human-like navigation. | P0 |
 | **Tool B: Page Analyst** | "The Deep Dive". Extracts "Soft Criteria" (View, Exposure, Parking) using LLM reasoning on the DOM. | P0 |
 | **Tool C: Status Cert Auditor** | "The Risk Checker". Scans uploaded PDFs for keywords (Special Assessment, Kitec, Lawsuit). | P1 |
-| **Tool D: Future Value Mapper** | "The Locator". Calculates distance to Ontario Line stations & aggregations of Crime/Safety data. | P1 |
+| **Tool D: Future Value Mapper** | "The Locator". Calculates distance to Ontario Line, **Bike Trails, and Kayak Launch points**. | P1 |
 
 ## 5. Data Schema (Pydantic)
 The Agent will output data adhering to strict schemas.
 *   **Hard Criteria**: `price`, `sqft`, `fees`, `parking_included`.
 *   **Soft Criteria**: `exposure` (N/S/E/W), `view_quality` (Lake vs Wall), `renter_ratio_risk`.
+*   **Lifestyle**: `dist_to_trail`, `dist_to_water` (Kayak access).
 *   **Investment**: `cash_flow_scenario` (Rental), `appreciation_scenario` (Hold).
 
 ## 6. Financial Modeling (Dual Scenarios)
